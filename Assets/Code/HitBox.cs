@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //All HitBox should do is update weapon/collided with entity when GO collides with an entity
+//testing git
 
 public class HitBox : MonoBehaviour
 {
