@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour, IEntity
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetButton("Fire1"))
         {
             OnWeaponFire();
         }
@@ -70,22 +70,9 @@ public class PlayerController : MonoBehaviour, IEntity
         Camera m_Camera = Camera.main;
         float theta = m_Camera.transform.eulerAngles.y*Mathf.Deg2Rad;
         Vector3 move = new Vector3();
-        if (Input.GetKey("w"))
-        {
-             move += new Vector3(Mathf.Sin(theta), 0, Mathf.Cos(theta))*speed;//new Vector3(m_Camera.transform.forward.x, 0, m_Camera.transform.forward.z) * speed;
-        }
-        if (Input.GetKey("s"))
-        {
-            move += new Vector3(Mathf.Sin(theta), 0, Mathf.Cos(theta)) * -speed;
-        }
-        if (Input.GetKey("d"))
-        {
-            move += m_Camera.transform.right * speed;
-        }
-        if (Input.GetKey("a"))
-        {
-            move += m_Camera.transform.right*-1 * speed;
-        }
+
+        move += new Vector3(Mathf.Sin(theta), 0, Mathf.Cos(theta))*speed* Input.GetAxis("Vertical");
+        move += m_Camera.transform.right * speed* Input.GetAxis("Horizontal");
         move += new Vector3(0, -9.8f* Time.deltaTime, 0);
         characterController.Move(move);
     }
