@@ -1,0 +1,41 @@
+Hell's Kitchen:
+
+##Executive summary##
+	So this game should be or I guess will be the struggle of a cook to both maintain his possition his sanity and his life while forced to work double shift. Cooking for just the worst boss in existance and demon fighting for the privlidge to work for him.
+	twin sticks shooter/rouge like? mixed with cooking mini games. Think of spinning plates, player should always be aware of something counting down/expiring
+	Main character is a cook who is too good for the dive he works in; he stumbles on a gateway to hell in the kitchen pantry. 
+	Meets satan? who curses him to loose his soul?
+	Demons keep breaking in and stealing his shit, he's got to go in to hell to get it back. Take out your deep frier and fight for your recipes.
+	
+	There will be assistance in the cook's struggle, you can hire other cheifs each with different stats like speed, HP, attack power, etc. and a specialty dish that they can make better than anyone. Assitants will help both in the kitchen and on the warpath, with each offering some individual benefits/buffs to the player in both places.
+
+##Structure##
+	Hell's Kitchen will be split mostly between an isometric topdown dungeon crawler and cooking mama.
+	Dungeon crawler portion: cheif goes through murdering hell demons using a combination of both actual wepons and kitchen implements
+		Order around companions to assist you with murdering demons
+		Pick up and equip armor, totems for passive buffs and guns for player advancement
+	Kitchen Portion: cook up recipes for a bunch of very impatient customers
+		Customer Orders need to be finished within a timeperiod, which is half speed in hell (doesn't stop though)
+		Order companions to help in kitchen
+		**watch more cooking shows to beter understand how commercial kitchens are actually setup
+
+##Gameplay (objectives, game progressions, in-game GUI, etc.)##
+	Like I pointed out above, fight demons to retrieve ingredients, cook up your recipes and serve them to your customers.
+	So gameplay will be split between two "modes", dungeon crawling through hell fighting demons and cooking your recipes in the kitchen
+	You dungeon crawl to retrieve your ingredients while under a timer from customers waiting on their orders
+	You cook your recipes for your customers until you realize that you are missing some ingrediant, then you need to go into the dungeon
+
+##Mechanics (rules, combat, physics, etc.)##
+	This game is split between a twin stick shooter fighting demons and series of simple "warioware" minigames to cook recipes
+	Should have a timer for each meal which will be used to grade the player at the end of each day
+	In hell the player will receive ingredients and cash money to use for cooking/buying new equipment
+	Should have a daily rating system that takes into account how well/quickly the player/team finished each recipe.
+	Should have procedural dungeons connecting between important story rooms
+	
+	Write the rest later.
+	What else is there to talk about? Its fairly simple, half dungeon crawler half cooking momma.
+	
+
+Game elements (worldbuilding, story, characters, locations, level design, etc.)
+
+Assets (music, sound effects, 2D/3D models, etc.)
