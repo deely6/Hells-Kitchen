@@ -1,23 +1,45 @@
 Hell's Kitchen:
 
 ##Executive summary##
-	So this game should be or I guess will be the struggle of a cook to both maintain his possition his sanity and his life while forced to work double shift. Cooking for just the worst boss in existance and demon fighting for the privlidge to work for him.
-	twin sticks shooter/rouge like? mixed with cooking mini games. Think of spinning plates, player should always be aware of something counting down/expiring
-	Main character is a cook who is too good for the dive he works in; he stumbles on a gateway to hell in the kitchen pantry. 
-	Meets satan? who curses him to loose his soul?
-	Demons keep breaking in and stealing his shit, he's got to go in to hell to get it back. Take out your deep frier and fight for your recipes.
+	So this game should be or I guess will be the struggle of a cook to both maintain his possition his sanity and his life while forced to work double shift. Cooking under the worst boss in existance and fighting off the demons that keep stealing his damn ingrediants.
+	twin sticks shooter/rouge like? mixed with cooking mini games. 
+	Think of spinning plates, player should always be aware of something counting down/expiring
 	
-	There will be assistance in the cook's struggle, you can hire other cheifs each with different stats like speed, HP, attack power, etc. and a specialty dish that they can make better than anyone. Assitants will help both in the kitchen and on the warpath, with each offering some individual benefits/buffs to the player in both places.
-
 ##Structure##
 	Hell's Kitchen will be split mostly between an isometric topdown dungeon crawler and cooking mama.
-	Dungeon crawler portion: cheif goes through murdering hell demons using a combination of both actual wepons and kitchen implements
-		Order around companions to assist you with murdering demons
-		Pick up and equip armor, totems for passive buffs and guns for player advancement
-	Kitchen Portion: cook up recipes for a bunch of very impatient customers
-		Customer Orders need to be finished within a timeperiod, which is half speed in hell (doesn't stop though)
-		Order companions to help in kitchen
+	Both portions will share a similar control scheme
+	Game will be split into days with a set timelimit, each day will have certain challanges/customers to handle
+	Player will receive tips/rating for the day that takes into account how quickly they managed to complete recipes
+		Rating will also take into account any loot they found while dungeon crawling and how well they took care of demons
+	Game will autosave at the end of each day, if the player dies/gets a low enough customer rating to get fired they will need to redo the day
+		(lower difficulty will allow players to save anytime/higher dificulty will remove earlier autosaves)
+	Player leveling will be done through equipment found during dungeon crawling and friendship level with co-workers not through leveling
+	
+	#Dungeon crawler portion# 
+		Chief goes through murdering hell demons using a combination of both actual wepons and kitchen implements
+		Order around companions to assist you with murdering demons/each companion will be given unique stats and quirk to aid the player
+		While in the dungeon time to complete customer orders and time in the day will go by more slowly
+		Dungeon will have preset 'plot important' rooms (i.e. boss arenas) interspersed between procedurally generated connecting hallways
+		Dungeon enemies will be based on demonic versions of common kitchen pests (i.e. roaches, rats, flies, black mold, etc.)
+		Player will explore dungeon to collect loot for perchasing new items and ingrediants for recipes 
+		
+	#Kitchen Portion# 
+		cook up recipes for a bunch of very impatient customers
+		cooking involves first finding whatever ingrediants are necessary for a given recipe (by going to the pantry and hell) then completing a short cooking minigame
+			(i.e. minigame to cut up a tomato or flip something in a skillet)
+		Customer Orders need to be finished within a timeperiod, swiftness and quality determines tip recieved by customer
+			quality determined by how well player completes the cooking minigames 
+		Companions will help in Kitchen, each with their own speciality dish/cooking expertise
+		As well as cooking player will need to clean dishes/upkeep the kitchen itself (similarly through cooking mama esque minigames)
 		**watch more cooking shows to beter understand how commercial kitchens are actually setup
+		
+	#Companions/NPCs#
+		Both will contain AI companions to aid the player in both cooking and shooting
+		Player will recruit new companions at the beginning of each day
+		Player will interact with their kitchen buddies/boss during downtimes in the action (i.e. lunch break or beginning of the day)
+			interactions will be shown through text boxes with emotive character portraits off to the side
+			during this time player can progress the plot or complete co-workers side-stories that will to improve their effectiveness in combat and cooking
+
 
 ##Gameplay (objectives, game progressions, in-game GUI, etc.)##
 	Like I pointed out above, fight demons to retrieve ingredients, cook up your recipes and serve them to your customers.
