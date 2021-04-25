@@ -39,6 +39,10 @@ Hell's Kitchen:
 		Player will interact with their kitchen buddies/boss during downtimes in the action (i.e. lunch break or beginning of the day)
 			interactions will be shown through text boxes with emotive character portraits off to the side
 			during this time player can progress the plot or complete co-workers side-stories that will to improve their effectiveness in combat and cooking
+			
+	#Story#
+		Game will start with only a single dungeon room (the pantry) with the player tasked with removing demons to get to ingrediants
+		Later dungeon will expand day by day until you get the full dungeon experiance
 
 
 ##Gameplay (objectives, game progressions, in-game GUI, etc.)##
