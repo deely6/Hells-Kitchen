@@ -8,6 +8,8 @@ public class BasicGunController : MonoBehaviour,IWeapon
     public IEntity holder;
     List<GameObject> bullets=new List<GameObject>();
     public int bulletIterator;
+    public int fireRate = 12;
+    int fireDelayCount = 0;
 
     [System.Serializable]
     class BulletTrajectory
@@ -47,16 +49,20 @@ public class BasicGunController : MonoBehaviour,IWeapon
 
     public void OnFire()
     {
-        Debug.Log("fire");
+        Debug.Log("fire"+ fireDelayCount);
         //bullets.Add(Instantiate(bullet, this.transform.position, transform.rotation));//new BulletTrajectory(Instantiate(bullet,this.transform.position,transform.rotation), transform.eulerAngles.y * Mathf.Deg2Rad));
-        bullets[bulletIterator].transform.position = this.transform.position;
-        bullets[bulletIterator].transform.rotation = this.transform.rotation;
-        ((HitBox)bullets[bulletIterator].GetComponent(typeof(HitBox))).OnBirth(this,holder,new Damage(1));
-        ((ITrajectory)bullets[bulletIterator].GetComponent(typeof(ITrajectory))).OnActivate(this.transform.rotation, this.transform.position, 0,this);
-        Debug.Log(bullets[bulletIterator].transform.position+" "+bullets[bulletIterator].name);
-        bulletIterator++;
-        Debug.Log(bulletIterator + " " + bullets.Count);
-        if (bulletIterator == bullets.Count) { bulletIterator = 0; }
+        if (fireDelayCount <= 0)
+        {
+            bullets[bulletIterator].transform.position = this.transform.position;
+            bullets[bulletIterator].transform.rotation = this.transform.rotation;
+            ((HitBox)bullets[bulletIterator].GetComponent(typeof(HitBox))).OnBirth(this, holder, new Damage(1));
+            ((ITrajectory)bullets[bulletIterator].GetComponent(typeof(ITrajectory))).OnActivate(this.transform.rotation, this.transform.position, 0, this);
+            Debug.Log(bullets[bulletIterator].transform.position + " " + bullets[bulletIterator].name);
+            bulletIterator++;
+            Debug.Log(bulletIterator + " " + bullets.Count);
+            if (bulletIterator == bullets.Count) { bulletIterator = 0; }
+            fireDelayCount = fireRate;
+        }
     }
 
     public void OnPickup(IEntity entity)
@@ -69,25 +75,7 @@ public class BasicGunController : MonoBehaviour,IWeapon
 
     public void Update()
     {
-        /*
-        List<GameObject> removeBullets = new List<GameObject>();
-        foreach(GameObject b in bullets)
-        {
-            if (b == null) { removeBullets.Add(b); }
-        }
-        foreach(GameObject b in removeBullets)
-        {
-            bullets.Remove(b);
-        }
-        foreach(GameObject b in bullets)
-        { 
-            b.transform.position += (b.GetComponent<ITrajectory>().GetChange());
-            /*if (!b.gameObject.GetComponent<Renderer>().isVisible && b.active == true)
-            {
-                Destroy(b.gameObject);
-            }
-            b.active = true;*/
-        //}
+        if (fireDelayCount > 0) { fireDelayCount--; }
     }
 
     public void Start()
