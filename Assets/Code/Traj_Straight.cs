@@ -21,7 +21,7 @@ public class Traj_Straight : MonoBehaviour,ITrajectory
     {
         if (active)
         {
-            this.transform.position += new Vector3(-Mathf.Cos(theta), 0, Mathf.Sin(theta)) * speed;
+            this.transform.position += new Vector3(-Mathf.Cos(theta), 0, Mathf.Sin(theta)) * speed *Time.deltaTime;
             if (!gameObject.GetComponent<Renderer>().isVisible && threeFrame>3) //offscreen
             {
                 //Destroy(this.gameObject);

@@ -1,9 +1,12 @@
 Hell's Kitchen:
 
 ##Executive summary##
-	So this game should be or I guess will be the struggle of a cook to both maintain his possition his sanity and his life while forced to work double shift. Cooking under the worst boss in existance and fighting off the demons that keep stealing his damn ingrediants.
+	An unwitting cook stuggling to keep his resteraunt afloat stumbles uppon his salvation. As it Turns out the food in the pit is delicious, but the customer service is to die for.
+	Gordon Ramsy vs. Demon Farmers the game.
+	So this game should be or I guess will be the struggle of a cook to both maintain his possition his sanity and his life while forced to work double shift. Cooking to make his rent while fighting off the demons to get the good shit.
 	twin sticks shooter/rouge like? mixed with cooking mini games. 
 	Think of spinning plates, player should always be aware of something counting down/expiring
+	
 	
 ##Structure##
 	Hell's Kitchen will be split mostly between an isometric topdown dungeon crawler and cooking mama.
@@ -21,7 +24,7 @@ Hell's Kitchen:
 		While in the dungeon time to complete customer orders and time in the day will go by more slowly
 		Dungeon will have preset 'plot important' rooms (i.e. boss arenas) interspersed between procedurally generated connecting hallways
 		Dungeon enemies will be based on demonic versions of common kitchen pests (i.e. roaches, rats, flies, black mold, etc.)
-		Player will explore dungeon to collect loot for perchasing new items and ingrediants for recipes 
+		Player will explore dungeon to collect loot for perchasing new items, ingrediants for recipes, recipes themselves, new companions, etc.
 		
 	#Kitchen Portion# 
 		cook up recipes for a bunch of very impatient customers
@@ -31,6 +34,8 @@ Hell's Kitchen:
 			quality determined by how well player completes the cooking minigames 
 		Companions will help in Kitchen, each with their own speciality dish/cooking expertise
 		As well as cooking player will need to clean dishes/upkeep the kitchen itself (similarly through cooking mama esque minigames)
+		Player will be able to assign companions to man various stations in the kitchen to help with cooking
+		Each new companion brings with them a new recipe, recipe's can also be found in the dungeons by themselves.
 		**watch more cooking shows to beter understand how commercial kitchens are actually setup
 		
 	#Companions/NPCs#
@@ -39,10 +44,14 @@ Hell's Kitchen:
 		Player will interact with their kitchen buddies/boss during downtimes in the action (i.e. lunch break or beginning of the day)
 			interactions will be shown through text boxes with emotive character portraits off to the side
 			during this time player can progress the plot or complete co-workers side-stories that will to improve their effectiveness in combat and cooking
+		Player will be able to give simple commands to companions in both modes:
+			Player can assign companions to stations in the kitchen
+			In dungeon player can order companions to certain positions/to find items/to clear out adjacent rooms/etc.
 			
 	#Story#
-		Game will start with only a single dungeon room (the pantry) with the player tasked with removing demons to get to ingrediants
-		Later dungeon will expand day by day until you get the full dungeon experiance
+		Game starts with cook entering into hell for the first time because some rat demons stole his tomatoes. He ends up locating a whole busshel of tomatoes and decieds to use some for spaghetti sauce. It turns out delicious, now the cook needs to go in for more. From there the cook goes through an Odysee that takes him from the pit of hell to meeting with God themselves and seeing everything in between.
+
+##General Ideas/Notes##
 
 
 ##Gameplay (objectives, game progressions, in-game GUI, etc.)##

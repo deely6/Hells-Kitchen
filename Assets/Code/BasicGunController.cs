@@ -8,8 +8,8 @@ public class BasicGunController : MonoBehaviour,IWeapon
     public IEntity holder;
     List<GameObject> bullets=new List<GameObject>();
     public int bulletIterator;
-    public int fireRate = 12;
-    int fireDelayCount = 0;
+    public float fireRate = .1f;
+    float fireDelayCount = 0;
 
     [System.Serializable]
     class BulletTrajectory
@@ -56,7 +56,7 @@ public class BasicGunController : MonoBehaviour,IWeapon
             bullets[bulletIterator].transform.position = this.transform.position;
             bullets[bulletIterator].transform.rotation = this.transform.rotation;
             ((HitBox)bullets[bulletIterator].GetComponent(typeof(HitBox))).OnBirth(this, holder, new Damage(1));
-            ((ITrajectory)bullets[bulletIterator].GetComponent(typeof(ITrajectory))).OnActivate(this.transform.rotation, this.transform.position, 0, this);
+            ((ITrajectory)bullets[bulletIterator].GetComponent(typeof(ITrajectory))).OnActivate(this.transform.rotation, this.transform.position, 1000, this);
             Debug.Log(bullets[bulletIterator].transform.position + " " + bullets[bulletIterator].name);
             bulletIterator++;
             Debug.Log(bulletIterator + " " + bullets.Count);
@@ -75,7 +75,7 @@ public class BasicGunController : MonoBehaviour,IWeapon
 
     public void Update()
     {
-        if (fireDelayCount > 0) { fireDelayCount--; }
+        if (fireDelayCount > 0) { fireDelayCount-=Time.deltaTime; }
     }
 
     public void Start()

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour, IEntity
 {
-    public float speed = 1;
+    public float speed = 100;
     public GameObject gun;
     public CharacterController characterController;
 
@@ -71,8 +71,8 @@ public class PlayerController : MonoBehaviour, IEntity
         float theta = m_Camera.transform.eulerAngles.y*Mathf.Deg2Rad;
         Vector3 move = new Vector3();
 
-        move += new Vector3(Mathf.Sin(theta), 0, Mathf.Cos(theta))*speed* Input.GetAxis("Vertical");
-        move += m_Camera.transform.right * speed* Input.GetAxis("Horizontal");
+        move += new Vector3(Mathf.Sin(theta), 0, Mathf.Cos(theta))*speed* Input.GetAxis("Vertical") * Time.deltaTime;
+        move += m_Camera.transform.right * speed* Input.GetAxis("Horizontal")* Time.deltaTime;
         move += new Vector3(0, -9.8f* Time.deltaTime, 0);
         characterController.Move(move);
     }
