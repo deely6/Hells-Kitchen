@@ -8,7 +8,7 @@ public class BasicGunController : MonoBehaviour,IWeapon
     public IEntity holder;
     List<GameObject> bullets=new List<GameObject>();
     public int bulletIterator;
-    public float fireRate = .1f;
+    public float fireRate = .5f; //#bullets fired per second
     float fireDelayCount = 0;
 
     [System.Serializable]
@@ -61,7 +61,7 @@ public class BasicGunController : MonoBehaviour,IWeapon
             bulletIterator++;
             Debug.Log(bulletIterator + " " + bullets.Count);
             if (bulletIterator == bullets.Count) { bulletIterator = 0; }
-            fireDelayCount = fireRate;
+            fireDelayCount = 1/fireRate; //rate should be #bullets fired per second
         }
     }
 
