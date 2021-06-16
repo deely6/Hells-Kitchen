@@ -22,6 +22,7 @@ public class Entity_Main : MonoBehaviour
     {
         //add AI classes connected to the entities game object to the list of AI classes, the 'active' AI class is the one currently in use
         //add specific entity classes from the game object to the specific entity class map
+        //setup listener for all events (i.e. take damage event and global state change event)
     }
 
     // Update is called once per frame
