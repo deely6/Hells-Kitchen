@@ -5,6 +5,7 @@ using UnityEngine;
 public class Entity_Main : MonoBehaviour
 {
     bool isActive;
+    bool isPlayer;
     float hitPoints;
     float movementSpeed;
     int alertState;
@@ -16,6 +17,10 @@ public class Entity_Main : MonoBehaviour
     //public list of sounds
     //public list of animations, should this be here or somewhere else?
     //public Entity_DamageCalculations class for this entity
+
+    //Create Events Here:
+    //  Need event for taking damage, entering and leaving a room (if it is the player character), dying?, killing?, activation
+
 
     // Start is called before the first frame update
     void Start()
@@ -61,5 +66,15 @@ public class Entity_Main : MonoBehaviour
     void Listen(<T> paramaters,string name)
     {
         //listens for any broadcasts sent by other entities
+    }
+
+    void Destroy()
+    {
+        //delete this entity and unsubscribe to any events it currently is subscribed to to help with garbage collection
+    }
+
+    void Activate()
+    {
+        //activate this entity subscribe to all events
     }
 }
